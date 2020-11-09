@@ -15,8 +15,8 @@ export default function About() {
         <Media src={img}  ></Media>
         </div>
         <div className="col-lg-6  m-auto">
-        <h2  style={{color:'#2980b9',fontSize:'20px',fontWeight:'bold',paddingBottom:'4px'}}>I'am Bhaskar Sengupta</h2>   
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        <h2  style={{color:'#2980b9',fontSize:'20px',fontWeight:'bold',paddingBottom:'10px',lineHeight:'1.5em',textAlign:'center'}}>I'am Bhaskar Sengupta</h2>   
+        <p style={{lineHeight:'1.6em',wordSpacing:'0.3em',wordWrap:'break-word',textAlign:'justify'}}>I am an engineering student  currently pursuing my degree from Bp Poddar Institute of Management and Technology,and an aspiring full stack MERN Developer . Some of my hobbies includes playing harmonica and painting . I am looking for freelancing and internship opportunities where i can showcase my skills via collaborative work .    
         </p>    
         </div>
         

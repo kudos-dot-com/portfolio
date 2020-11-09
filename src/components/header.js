@@ -16,7 +16,7 @@ export default class header extends Component {
                 <span style={{fontSize:'25px',fontWeight:'bold',display:'flex'}}>
                <div style={{paddingRight:'5px',paddingLeft:'2px'}}>I'am a </div>{' '}
                <div style={{color:'#2980b9'}}> <Typical style={{fontSize:'70px',color:'red'}}
-            steps={[' Student', 1000, ' Web Developer!', 2000,' Geek', 1000,]}
+            steps={[' Student', 2000, ' Web Developer!', 4000,' Geek', 1200,]}
             loop={Infinity}
             wrapper="p"
             /></div>

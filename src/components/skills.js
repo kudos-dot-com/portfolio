@@ -53,9 +53,9 @@ export default function Skills() {
   ])
  
   return (
-    <div className="container" id="skills">
+    <div className="container" >
       <div className="row justify-content-center">
-        <h1 style={{paddingBottom:'1px',width:'fit-content',fontSize:"25px",color:' #2980b9'}}>Skills<div style={{width:'60%',height:'3px',background:'#40739e',opacity:'1',margin:'auto'}}></div></h1>
+        <h1 id="skills" style={{paddingBottom:'1px',width:'fit-content',fontSize:"25px",color:' #2980b9'}}>Skills<div style={{width:'60%',height:'3px',background:'#40739e',opacity:'1',margin:'auto'}}></div></h1>
         </div>
         <Info /> 
         <br></br>

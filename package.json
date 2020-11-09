@@ -1,8 +1,8 @@
 {
-  "name": "hackathon",
+  "name": "personel-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kudos-dot-com.github.io/react-portfolio",
+  "homepage": "http://kudos-dot-com.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",

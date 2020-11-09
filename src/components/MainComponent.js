@@ -14,7 +14,8 @@ const Example = (props) => {
 
   return (
     <div style={{fontSize:"15px"}}>
-      <Navbar color="faded" className="container-fluid shadow-sm  rounded w-100" sticky="top bg-white" light>
+      <div className="fixed-top mb-5 mb-lg-4">
+      <Navbar color="faded" className="container-fluid shadow-sm  rounded w-100 bg-white"  light>
       <NavbarBrand  onClick={()=>scroll.scrollToTop()} className="mr-auto" ><div>PortFolio</div></NavbarBrand>
         
         <Nav  className="d-none d-lg-flex d-xl-flex">
@@ -37,7 +38,9 @@ const Example = (props) => {
          
         
         <br></br>
-        <div className="shadow bg-white text-center px-5 py-2 d-lg-none" style={{transform:collapsed?'translateY(-500px)':'translateY(0)',display:collapsed?'none':'block',width:'100%',margin:'auto',borderRadius:'0px 0px 20px 20px',transition:'2s'}}>
+       </Navbar>
+      
+ <div className="shadow bg-white text-center px-5 py-2 d-lg-none" style={{transform:collapsed?'translateY(-500px)':'translateY(0)',display:collapsed?'none':'block',width:'100%',margin:'auto',borderRadius:'0px 0px 20px 20px',transition:'2s'}}>
           <Nav navbar  >
           <NavItem className="text-dark">
               <NavLink ><Link to="header" smooth={true} duration={1500} className="text-dark navlinks" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Home</Link></NavLink>
@@ -53,11 +56,11 @@ const Example = (props) => {
             </NavItem>
           </Nav>
           </div> 
-          
-       
-      </Navbar>
-      
-     <br />
+
+</div>
+
+
+<br /> <br /><br /><br />
       < Header />
       <br /><br />
       <About />
