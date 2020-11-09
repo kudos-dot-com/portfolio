@@ -28,3 +28,6 @@ border-bottom:3px solid #40739e;
 .pic:hover{
     transform:scale(1.1);
 }
+.nav2:active{
+    border-bottom:3px solid #40739e;
+}

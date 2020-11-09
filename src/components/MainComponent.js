@@ -4,9 +4,11 @@ import {animateScroll as scroll} from 'react-scroll';
 import Header from './header';
 import About from './About';
 import Skill from './skills';
-import Project from  './projects'
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import Project from  './projects';
+import Contacts from './contacts';
+import { Collapse, Media ,Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import '../App.css';
+import img from '../img/undraw_portfolio_website_lidw.svg';
 const Example = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -31,43 +33,42 @@ const Example = (props) => {
             <NavLink><Link to="project" smooth={true} spy={true} className="text-dark" style={{textDecoration:'none',cursor:'pointer'}} >Projects</Link></NavLink>
             </NavItem>
           </Nav>
-        
-        
-        <div onClick={toggleNavbar} className="d-lg-none border-0 " style={{outline:'none'}}>hi</div>
-         
+        <NavbarToggler onClick={toggleNavbar} className="d-lg-none border-0 " style={{outline:'none'}}></NavbarToggler> 
         
         <br></br>
        </Navbar>
       
- <div className="shadow bg-white text-center px-5 py-2 d-lg-none  sticky-bottom bottom-0 z4" style={{transform:collapsed?'translateY(-500px)':'translateY(0)',display:collapsed?'none':'block',width:'100%',margin:'auto',borderRadius:'0px 0px 20px 20px',transition:'2s'}}>
+ <div className="container-fluid shadow text-center  d-lg-none  sticky-bottom bottom-0 text-white py-4" style={{fontSize:'15px',letterSpacing:'0.2em',transform:collapsed?'translateX(500px)':'translateY(0)',width:'60%',height:'100vh',background:'#2c3e50',position:'fixed',zIndex:'100',right:'0',margin:'auto',borderRadius:'0px 0px 20px 20px',transition:'1.1s'}}>
           <Nav navbar  >
-          <NavItem className="text-dark">
-              <NavLink ><Link to="header" smooth={true} duration={1500} className="text-dark navlinks" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Home</Link></NavLink>
+          <NavItem className="text-white my-2 py-2 ">
+              <NavLink ><Link to="header" smooth={true} duration={1500} className="nav2 text-white" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Home</Link></NavLink>
           </NavItem>
-            <NavItem className="text-dark">
-            <NavLink><Link to="about" smooth={true} spy={true}  duration={1500} className="text-dark navlinks" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>About</Link></NavLink>
+            <NavItem className="text-white my-2 py-2">
+            <NavLink><Link to="about" smooth={true} spy={true}  duration={1500} className="nav2  text-white" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>About</Link></NavLink>
             </NavItem>
-            <NavItem className="text-dark">
-            <NavLink><Link to="skills" smooth={true} spy={true}  duration={1500} className="text-dark navlinks" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Skills</Link></NavLink>
+            <NavItem className="text-white  my-2 py-2 ">
+            <NavLink><Link to="skills" smooth={true} spy={true}  duration={1500} className=" nav2 text-white" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Skills</Link></NavLink>
             </NavItem>
-            <NavItem className="text-dark">
-            <NavLink><Link to="project" smooth={true} spy={true}  duration={1500} className="text-dark navlinks" style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Projects</Link></NavLink>
+            <NavItem className="text-white  my-2 py-1 ">
+            <NavLink><Link to="project" smooth={true} spy={true}  duration={1500} className="nav2  text-white " style={{width:'fit-content',textDecoration:'none',cursor:'pointer'}} onClick={()=>setCollapsed(true)}>Projects</Link></NavLink>
             </NavItem>
           </Nav>
           </div> 
 
-
-
-
-     <br />
+     <Media   className="conatiner m-auto d-lg-none" style={{height:'auto',width:'auto'}} src={img}></Media>
+     
       < Header />
       <br /><br />
       <About />
       <Skill />
       <br></br>
       <Project />
-    </div>
+      <br></br>
+      <Contacts />
+    <br></br>
     
+    </div>
+   
   );
 }
 
