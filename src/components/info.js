@@ -48,7 +48,7 @@ export default function info() {
             </div>
                <div className="row d-flex ">
                 <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>Java Swing</div>
-                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>JavaFxnpm</div>
+                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>JavaFx</div>
         </div>
         <div className="row">
             
