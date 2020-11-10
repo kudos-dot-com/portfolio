@@ -21,9 +21,9 @@ import img from '../img/photo-1472289065668-ce650ac443d2.jpg';
               <CardTitle tag="h5">{name.name}</CardTitle>
               <CardSubtitle tag="h6" className="align-self-center text-muted">{name.type}</CardSubtitle>
               </div>
-              <div className="m-auto align-self-bottom">
-             <CardText tag="h6">{name.des}</CardText>
-              <Button style={{display:'block',margin:'auto'}}>Button</Button></div>
+              <div className="m-auto d-flex flex-column align-self-bottom">
+             <CardText tag="h6" className="mb-4">{name.des}</CardText>
+              <Button style={{display:'block',margin:'auto'}} className="justify-content-around">Know more</Button></div>
             </CardBody>
           </Card>
         </div>

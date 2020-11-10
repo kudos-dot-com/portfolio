@@ -40,12 +40,27 @@ export default function info() {
         </div>
         <div className="row">
             
+            <span style={{display:'flex',margin:'15px 0px'}}><Media src={img}></Media><h1 style={{fontSize:'25px',marginLeft:'5px',color:'#40739e'}}>Other FrameWorks</h1></span>  
+            </div>
+               <div className="row d-flex ">
+                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>Java Swing</div>
+                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>JavaFxnpm</div>
+        </div>
+        <div className="row">
+            
             <span style={{display:'flex',margin:'15px 0px'}}><Media src={img}></Media><h1 style={{fontSize:'25px',marginLeft:'5px',color:'#40739e'}}>DevOps</h1></span>  
             </div>
                <div className="row d-flex ">
                 <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>Github</div>
         </div>
-        
+        <div className="row">
+            
+            <span style={{display:'flex',margin:'15px 0px'}}><Media src={img}></Media><h1 style={{fontSize:'25px',marginLeft:'5px',color:'#40739e'}}>Cloud</h1></span>  
+            </div>
+               <div className="row d-flex ">
+                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>Firebase</div>
+                <div className="p-2 border" style={{opacity:'0.7',fontWeight:'bold',borderRadius:'5px',background:'#ccc',color:'#333',marginRight:'10px',marginBottom:'5px'}}>Heroku</div>
+        </div>
         
 
         </div>
