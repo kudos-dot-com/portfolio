@@ -1,9 +1,13 @@
 import React from 'react'
 import img from '../img/thumbtack-solid.svg';
 import { Progress , Media , Card} from 'reactstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function info() {
+    AOS.init({duration:'1200'});
     return (
-        <div className="container">
+        <div data-aos="fade-down" className="container">
             <div className="row">
             <span style={{display:'flex',margin:'15px 0px'}}><Media src={img}></Media><h1 style={{fontSize:'25px',marginLeft:'5px',color:'#40739e'}}>Language I Speak</h1></span>  
             </div>

@@ -68,9 +68,7 @@ const Example = (props) => {
             </NavItem>
           </Nav>
           </div> 
-
-     <Media data-aos="slide-left"  className="conatiner m-auto d-lg-none" style={{height:'auto',width:'auto'}} src={img}></Media>
-     
+       <br></br>        
       < Header />
       <br /><br />
       <About />

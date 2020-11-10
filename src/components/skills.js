@@ -4,13 +4,14 @@ import img from '../img/thumbtack-solid.svg';
 import Info from './info';
 import img2 from '../img/images.jpg'; 
 import '../App.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 //#2f3640
 function List({prog})
 {
   return(
  <div>
-  <Card className=" shadow pt-2 m-auto m-lg-0 w-100" style={{borderRadius:'5px', paddingTop:'8px',width:`100%%`,background:'#fff',fontSize:'10px'}}>
+  <Card data-aos="fade-down" className=" shadow pt-2 m-auto m-lg-0 w-100" style={{borderRadius:'5px', paddingTop:'8px',width:`100%%`,background:'#fff',fontSize:'10px'}}>
  
   <div classname="" style={{color:'#000',display:'flex',justifyContent:'space-between',padding:'5px',fontWeight:'bolder',textTransform:'uppercase'}}>
     <div className="ml-2"><h4>{prog.name}</h4></div>
@@ -51,7 +52,7 @@ export default function Skills() {
       per:85
     },
   ])
- 
+  AOS.init({duration:'1200'});
   return (
     <div className="container" >
       <div className="row justify-content-center">
@@ -62,7 +63,7 @@ export default function Skills() {
         <br></br>      
         <span style={{display:'flex',marginBottom:'15px'}}><Media src={img}></Media><h1 style={{fontSize:'25px',marginLeft:'5px',color:'#40739e'}}>Learning Track</h1></span>  
         <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6" >
         {skills.map(x=>(
           <List  prog={x} />
         ))}</div>
